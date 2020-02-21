@@ -3,23 +3,9 @@ homebrew-clojure
 
 Homebrew Tap for Clojure
 
-## Installation
-
-On a particular machine you can install the Clojure tap as a one-time action:
-
-```
-brew tap clojure/clojure
-```
-
 ## Clojure
 
-To install Clojure with the tap installed:
-
-```
-brew install clojure
-```
-
-To install directly without installing the tap:
+To install the Clojure tools from the Clojure tap:
 
 ```
 brew install clojure/clojure/clojure
