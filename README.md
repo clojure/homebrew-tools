@@ -8,7 +8,7 @@ Homebrew Tap for Clojure
 To install the Clojure tools from the Clojure tap:
 
 ```
-brew install clojure/clojure/clojure
+brew install clojure/tools/clojure
 ```
 
 ## Use
