@@ -1,4 +1,4 @@
-class ClojureAT1.10.1.502 < Formula
+class ClojureAT1_10_1_502 < Formula
   desc "The Clojure Programming Language"
   homepage "https://clojure.org"
   url "https://download.clojure.org/install/clojure-tools-1.10.1.502.tar.gz"
