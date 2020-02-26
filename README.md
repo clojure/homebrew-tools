@@ -1,4 +1,4 @@
-homebrew-clojure
+homebrew-tools
 ================
 
 Homebrew Tap for Clojure
