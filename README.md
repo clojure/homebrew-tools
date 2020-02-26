@@ -5,23 +5,23 @@ Homebrew Tap for Clojure
 
 ## Why this tap?
 
-Using our own tap (vs the homebrew core tap) allows the Clojure team to retain full control over the Clojure formula, the timing of releases, and an archive of old versions. A Clojure formula still exists in the core tap, but is likely to lag the current versions here and should be considered unofficial.
+Using our own tap (vs the homebrew core tap) allows the Clojure team to retain full control over the Clojure formula, the timing of releases, and an archive of old versions. A Clojure formula still exists in the core tap, but is likely to lag the current versions here and is unofficial.
 
 ## Clojure tools version
 
 The Clojure tools (`clj`/`clojure`) use a versioning scheme CLOJURE_VERSION.COMMITS (like "1.10.1.507"). The Clojure version is a prefix of the Clojure tools version for three reasons:
 
-1. It should be a relative indicator to you about general age of the release corresponding to the most recent stable Clojure release at the time the Clojure tools were released. 
-2. It indicates the version of Clojure used by the tools themselves to compute classpaths.
+1. It is a relative indicator of the general age of the tools release.
+2. It is the version of Clojure used by the tools themselves to compute classpaths.
 3. If you do not specify a Clojure version in your dependencies (or don't have a deps.edn file), this is the version of Clojure that will be used.
 
 Importantly though, your own deps.edn file controls the version of Clojure that your program, library, or REPL will use! **ANY version of Clojure can be used with ANY version of the Clojure tools**.
 
 ## Install
 
-There are three different installation use cases supported by this tap - stable releases, dev releases, and version archive releases.
+There are three different installation use cases supported by this tap - stable tool releases, dev tool releases, and version archive tool releases.
 
-### Stable Releases
+### Stable Tool Releases
 
 Most users should use a stable release, defined by the `clojure` formula. In general, the stable version will be updated every 2-3 months.
 
@@ -33,7 +33,7 @@ brew upgrade clojure/tools/clojure
 brew uninstall clojure/tools/clojure
 ```
 
-### Development Releases
+### Development Tool Releases
 
 Dev releases are for users that want the very newest release of the Clojure tools. These may be updated as frequently as multiple times per week during active periods.
 
@@ -45,7 +45,7 @@ brew upgrade --devel clojure/tools/clojure
 brew uninstall clojure/tools/clojure
 ```
 
-### Specific Versions
+### Version Archive Tool Releases
 
 Occasionally it may be useful to install a specific version of the Clojure tools. In this case, you can use the archive of @ versions. Note that you cannot install both the stable or dev version AND a specific named version - these will conflict. You must `brew uninstall clojure/tools/clojure` first before installing a specific versions. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you helpful errors and tell you what to do.
 
