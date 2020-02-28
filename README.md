@@ -37,11 +37,10 @@ brew uninstall clojure/tools/clojure
 
 Dev releases are for users that want the very newest release of the Clojure tools. These may be updated as frequently as multiple times per week during active periods.
 
-To install/upgrade/uninstall the development Clojure tools from the Clojure tap:
+To install/uninstall the development Clojure tools from the Clojure tap:
 
 ```
 brew install --devel clojure/tools/clojure
-brew upgrade --devel clojure/tools/clojure
 brew uninstall clojure/tools/clojure
 ```
 
