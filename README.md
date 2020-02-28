@@ -5,7 +5,7 @@ Homebrew Tap for Clojure
 
 ## Why this tap?
 
-Using our own tap (vs the homebrew core tap) allows the Clojure team to retain full control over the Clojure formula, the timing of releases, and an archive of old versions. A Clojure formula still exists in the core tap, but is likely to lag the current versions here and is unofficial.
+Using a Clojure-specific tap (vs the homebrew core tap) allows the Clojure team to retain full control over the Clojure formula, the timing of releases, and an archive of old versions. A Clojure formula still exists in the core tap, but is likely to lag the current versions here and is unofficial.
 
 ## Clojure tools version
 
