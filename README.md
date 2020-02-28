@@ -30,7 +30,7 @@ To install/upgrade/uninstall the stable Clojure tools from the Clojure tap:
 ```
 brew install clojure/tools/clojure
 brew upgrade clojure/tools/clojure
-brew uninstall clojure/tools/clojure
+brew uninstall clojure
 ```
 
 ### Development Tool Releases
@@ -41,7 +41,7 @@ To install/uninstall the development Clojure tools from the Clojure tap:
 
 ```
 brew install --devel clojure/tools/clojure
-brew uninstall clojure/tools/clojure
+brew uninstall clojure
 ```
 
 ### Version Archive Tool Releases
@@ -52,7 +52,7 @@ To install/uninstall a versioned Clojure tools from the Clojure tap:
 
 ```
 brew install clojure/tools/clojure@1.10.1.502
-brew uninstall clojure/tools/clojure@1.10.1.502
+brew uninstall clojure@1.10.1.502
 ```
 
 ## Use
