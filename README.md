@@ -42,7 +42,7 @@ Dev releases are for users that want the very newest release of the Clojure tool
 To install/uninstall the development Clojure tools from the Clojure tap:
 
 ```
-brew install --devel clojure/tools/clojure
+brew install --head clojure/tools/clojure
 brew uninstall clojure
 ```
 
