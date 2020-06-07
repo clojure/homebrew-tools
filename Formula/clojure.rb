@@ -4,7 +4,7 @@ class Clojure < Formula
   url "https://download.clojure.org/install/clojure-tools-1.10.1.536.tar.gz"
   sha256 "b7c5b0cdeb750275ddd98095a1959657b95569b624da7c6163adce5a7d5f7119"
 
-  devel do
+  head do
     url "https://download.clojure.org/install/clojure-tools-1.10.1.536.tar.gz"
     sha256 "b7c5b0cdeb750275ddd98095a1959657b95569b624da7c6163adce5a7d5f7119"
     version "1.10.1.536"
