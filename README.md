@@ -48,7 +48,7 @@ brew uninstall clojure
 
 ### Version Archive Tool Releases
 
-Occasionally it may be useful to install a specific version of the Clojure tools. In this case, you can use the archive of @ versions. Note that you cannot install both the stable or dev version AND a specific named version - these will conflict. You must `brew uninstall clojure/tools/clojure` first before installing a specific versions. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you helpful errors and tell you what to do.
+Occasionally it may be useful to install a specific version of the Clojure tools. In this case, you can use the archive of @ versions. Note that you cannot install both the stable or dev version AND a specific named version - these will conflict. You must `brew uninstall clojure/tools/clojure` first before installing a specific version. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you helpful errors and tell you what to do.
 
 To install/uninstall a versioned Clojure tools from the Clojure tap:
 
