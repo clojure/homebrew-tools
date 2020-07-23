@@ -35,7 +35,7 @@ brew upgrade clojure/tools/clojure
 brew uninstall clojure
 ```
 
-Note: Clojure formulas use "devel" blocks which have been deprecated by brew. We will be updating these brew formulas but for now, it is only a warning so proceed, everything is fine!
+_Note: Clojure formulas use "devel" blocks which have been deprecated by brew. We will be updating these brew formulas but for now, it is only a warning so proceed, everything is fine!_
 
 ### Development Tool Releases
 
@@ -48,7 +48,7 @@ brew install --devel clojure/tools/clojure
 brew uninstall clojure
 ```
 
-Note: Clojure formulas use "devel" blocks which have been deprecated by brew. We will be updating these brew formulas but for now, it is only a warning so proceed, everything is fine!
+_Note: Clojure formulas use "devel" blocks which have been deprecated by brew. We will be updating these brew formulas but for now, it is only a warning so proceed, everything is fine!_
 
 ### Version Archive Tool Releases
 
@@ -61,7 +61,7 @@ brew install clojure/tools/clojure@1.10.1.502
 brew uninstall clojure@1.10.1.502
 ```
 
-Note: Clojure formulas use "devel" blocks which have been deprecated by brew. We will be updating these brew formulas but for now, it is only a warning so proceed, everything is fine!
+_Note: Clojure formulas use "devel" blocks which have been deprecated by brew. We will be updating these brew formulas but for now, it is only a warning so proceed, everything is fine!_
 
 ## Use
 
