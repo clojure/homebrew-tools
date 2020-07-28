@@ -1,14 +1,8 @@
-class Clojure < Formula
+class ClojureAT1101600 < Formula
   desc "The Clojure Programming Language"
   homepage "https://clojure.org"
-  url "https://download.clojure.org/install/clojure-tools-1.10.1.561.tar.gz"
-  sha256 "46c193d09f8fce9c0e5e530c2463586cec9717593cdee2f57199d278ed104e2d"
-
-  devel do
-    url "https://download.clojure.org/install/clojure-tools-1.10.1.600.tar.gz"
-    sha256 "87bc3773c5af430f052d4fd84bafd78350a5a60cad176a7c51d89ad0771bb963"
-    version "1.10.1.600"
-  end
+  url "https://download.clojure.org/install/clojure-tools-1.10.1.600.tar.gz"
+  sha256 "87bc3773c5af430f052d4fd84bafd78350a5a60cad176a7c51d89ad0771bb963"
 
   bottle :unneeded
 
