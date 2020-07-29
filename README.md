@@ -35,24 +35,17 @@ brew upgrade clojure/tools/clojure
 brew uninstall clojure
 ```
 
-_Note: Clojure formulas use "devel" blocks which have been deprecated by brew. We will be updating these brew formulas but for now, it is only a warning so proceed, everything is fine!_
+_Note: Clojure formulas use "devel" blocks which have been deprecated by brew. Moving forward we'll be removing these but for now, it is only a warning so proceed, everything is fine!_
 
 ### Development Tool Releases
 
-Dev releases are for users that want the very newest release of the Clojure tools. These may be updated as frequently as multiple times per week during active periods.
-
-To install/uninstall the development Clojure tools from the Clojure tap:
-
-```
-brew install --devel clojure/tools/clojure
-brew uninstall clojure
-```
-
-_Note: Clojure formulas use "devel" blocks which have been deprecated by brew. We will be updating these brew formulas but for now, it is only a warning so proceed, everything is fine!_
+brew has deprecated the --devel release functionality - use the versioned releases in the next section instead.
 
 ### Version Archive Tool Releases
 
-Occasionally it may be useful to install a specific version of the Clojure tools. In this case, you can use the archive of @ versions. Note that you cannot install both the stable or dev version AND a specific named version - these will conflict. You must `brew uninstall clojure/tools/clojure` first before installing a specific version. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you helpful errors and tell you what to do.
+Occasionally it may be useful to install a specific version of the Clojure tools, particularly dev releases before they become stable. In this case, you can use this archive of @ versions. 
+
+Note that you cannot install both the stable or dev version AND a specific named version - these will conflict. You must `brew uninstall clojure/tools/clojure` first before installing a specific version. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you helpful errors and tell you what to do.
 
 To install/uninstall a versioned Clojure tools from the Clojure tap:
 
@@ -60,8 +53,6 @@ To install/uninstall a versioned Clojure tools from the Clojure tap:
 brew install clojure/tools/clojure@1.10.1.502
 brew uninstall clojure@1.10.1.502
 ```
-
-_Note: Clojure formulas use "devel" blocks which have been deprecated by brew. We will be updating these brew formulas but for now, it is only a warning so proceed, everything is fine!_
 
 ## Use
 
