@@ -5,8 +5,6 @@ class ClojureAT1102774 < Formula
   sha256 "17136fb255502774ce9d64774f2ff0e735790990d0df39ace935df335345727c"
   license "EPL-1.0"
 
-  bottle :unneeded
-
   depends_on "rlwrap"
 
   uses_from_macos "ruby" => :build
