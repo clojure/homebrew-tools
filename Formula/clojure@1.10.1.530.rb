@@ -4,8 +4,6 @@ class ClojureAT1101530 < Formula
   url "https://download.clojure.org/install/clojure-tools-1.10.1.530.tar.gz"
   sha256 "9fdd7c2e1832cda660bd6ca65eee44fc71dc35fcaf74fd5145be56eb5d4525ad"
 
-  bottle :unneeded
-
   depends_on "rlwrap"
 
   uses_from_macos "ruby" => :build
