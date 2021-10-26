@@ -1,9 +1,11 @@
-class Clojure < Formula
+class ClojureAT1103933 < Formula
   desc "The Clojure Programming Language"
   homepage "https://clojure.org"
-  url "https://download.clojure.org/install/clojure-tools-1.10.3.986.tar.gz"
-  sha256 "7da84b6908d00e748c2c46ad23e383ede59cf18bf3ae449b1c30cd6a50b80ef6"
+  url "https://download.clojure.org/install/clojure-tools-1.10.3.933.tar.gz"
+  sha256 "c6c9b4fc7356afc6bfee22d0542f536d4900496bf0fc42376c3d1d30384b6570"
   license "EPL-1.0"
+
+  bottle :unneeded
 
   depends_on "rlwrap"
 
