@@ -2,7 +2,7 @@ class ClojureAT11111208 < Formula
   desc "The Clojure Programming Language"
   homepage "https://clojure.org"
   url "https://download.clojure.org/install/clojure-tools-1.11.1.1208.tar.gz"
-  sha256 "98b9085f44d955fdefa5d57a5caaab745ef0203c9a04a4f29274c6d1d48e1532"
+  sha256 "da801d7353d631a89a7d6fb1ec524d199333b1f89635ff454fe97a675ac139ed"
   license "EPL-1.0"
 
   depends_on "rlwrap"
