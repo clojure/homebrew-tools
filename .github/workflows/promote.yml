@@ -32,8 +32,8 @@ jobs:
         git config --global user.email "clojure-build@users.noreply.github.com"
     - name: Update main formula
       run: |
-        perl -pi.bak -e "s,$stable_version,$devel_version,g" Formula/clojure.rb
-        perl -pi.bak -e "s,$stable_sha,$devel_sha,g" Formula/clojure.rb
+        perl -pi.bak -e "s,${{ inputs.old_version }},${{ inputs.new_version }},g" Formula/clojure.rb
+        perl -pi.bak -e "s,${{ inputs.old_sha }},${{ inputs.new_sha }},g" Formula/clojure.rb
         git add Formula/clojure.rb
-        git commit --allow-empty -m "Promote $new_version to stable"         
+        git commit --allow-empty -m "Promote ${{ inputs.new_version}} to stable"
         git push
