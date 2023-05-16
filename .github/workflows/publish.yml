@@ -1,0 +1,30 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'CLI version to publish'
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Set Github identity
+      run: |
+        git config --global user.name clojure-build
+        git config --global user.email "clojure-build@users.noreply.github.com"
+    - name: Update tap
+      run: |
+        curl -O "https://download.clojure.org/install/clojure@$VERSION.rb" "Formula/clojure@$VERSION.rb"
+        git add "Formula/clojure@$VERSION.rb"
+        git commit -m "Publish $VERSION"
+        git push
+      env:
+        VERSION: ${{ inputs.version }}
