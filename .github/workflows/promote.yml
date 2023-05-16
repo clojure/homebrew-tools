@@ -1,0 +1,39 @@
+name: Promote
+
+on:
+  workflow_dispatch:
+    inputs:
+      old_version:
+        description: 'Old stable version'
+        required: true
+        type: string
+      old_sha:
+        description: 'Old stable sha'
+        required: true
+        type: string
+      new_version:
+        description: 'New devel version to promote'
+        required: true
+        type: string
+      new_sha:
+        description: 'New devel sha to promote'
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out
+      uses: actions/checkout@v3
+    - name: Set Github identity
+      run: |
+        git config --global user.name clojure-build
+        git config --global user.email "clojure-build@users.noreply.github.com"
+    - name: Update main formula
+      run: |
+        perl -pi.bak -e "s,$stable_version,$devel_version,g" Formula/clojure.rb
+        perl -pi.bak -e "s,$stable_sha,$devel_sha,g" Formula/clojure.rb
+        git add Formula/clojure.rb
+        git commit --allow-empty -m "Promote $new_version to stable"         
+        git push
