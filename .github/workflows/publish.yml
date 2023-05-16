@@ -22,7 +22,7 @@ jobs:
         git config --global user.email "clojure-build@users.noreply.github.com"
     - name: Update tap
       run: |
-        curl -O "https://download.clojure.org/install/clojure@$VERSION.rb" "Formula/clojure@$VERSION.rb"
+        curl "https://download.clojure.org/install/clojure@$VERSION.rb" -o "Formula/clojure@$VERSION.rb"
         git add "Formula/clojure@$VERSION.rb"
         git commit -m "Publish $VERSION"
         git push
