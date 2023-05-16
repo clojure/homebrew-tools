@@ -1,10 +1,10 @@
-name: Publish
+name: Publish CLI version
 
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'CLI version to publish'
+        description: 'CLI version to publish (ie 1.11.1.1234)'
         required: true
         type: string
 
