@@ -1,4 +1,4 @@
-name: Publish CLI version
+name: Publish
 
 on:
   workflow_dispatch:
