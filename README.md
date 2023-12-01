@@ -1,33 +1,33 @@
-homebrew-tools
+homebrew-tools - Homebrew Tap for Clojure
 ================
 
-Homebrew Tap for Clojure
+This tap contains the formula for the Clojure CLI. Most of the time, you should probably not be here at all and should instead follow the instructions on the [CLI Install Guide](https://clojure.org/guides/install_clojure).
 
-## Why this tap?
+## Why is there a Clojure-specific tap?
 
-Using a Clojure-specific tap (vs the homebrew core tap) allows the Clojure team to retain full control over the Clojure formula, the timing of releases, and an archive of old versions. 
+The Clojure-specific tap (vs the homebrew-core tap) gives the Clojure team full control over the Clojure formula, the timing of formula releases, and an archive of old and pre-release versions. 
 
-This tap is the source of the official Clojure brew formula. The Clojure formula on homebrew-core is not the official formula and is likely to be out of date.
+This tap is the source of the official Clojure brew formula (not the homebrew-core formula). The formulas in this tap and homebrew-central are similar but not identical. In particular, the homebrew-core formula depends on and attempts to update to the latest version of Java. Clojure itself does not require that and the formulas here simply assume you have (somehow) installed Java and put it on your path; they will not install Java for you.
 
-## Clojure tools version
+## Clojure CLI versions
 
-The Clojure tools (`clj`/`clojure`) use a versioning scheme CLOJURE_VERSION.COMMITS (like "1.10.1.507"). The Clojure version is a prefix of the Clojure tools version for three reasons:
+The Clojure CLI (`clj` and `clojure`) use a versioning scheme CLOJURE_VERSION.COMMITS (like "1.10.1.507"). The Clojure version is a prefix of the Clojure tools version for three reasons:
 
 1. It is a relative indicator of the general age of the tools release.
 2. It is the version of Clojure used by the tools themselves to compute classpaths.
-3. If you do not specify a Clojure version in your dependencies (or don't have a deps.edn file), this is the version of Clojure that will be used.
+3. If you do not specify a Clojure version in your dependencies (or don't have a deps.edn file), this is the version of Clojure that will be used when running a REPL or a program.
 
 Importantly though, your own deps.edn file controls the version of Clojure that your program, library, or REPL will use! **ANY version of Clojure can be used with ANY version of the Clojure tools**.
 
 ## Install
 
-There are three different installation use cases supported by this tap - stable tool releases, dev tool releases, and version archive tool releases.
+When installing the Clojure CLI, you can choose either the latest stable CLI release (normal use), or a specific versioned release.
 
-### Stable Tool Releases
+### Latest Stable CLI Release
 
-Most users should use a stable release, defined by the `clojure` formula. In general, the stable version will be updated every 2-3 months.
+Most users should use the current stable release, defined in the `clojure` formula.
 
-To install/upgrade/uninstall the stable Clojure tools from the Clojure tap:
+To install, upgrade, or uninstall the stable Clojure CLI release from this tap use the respective commands:
 
 ```
 brew install clojure/tools/clojure
@@ -35,30 +35,32 @@ brew upgrade clojure/tools/clojure
 brew uninstall clojure
 ```
 
-_Note: Clojure formulas use "devel" blocks which have been deprecated by brew. Moving forward we'll be removing these but for now, it is only a warning so proceed, everything is fine!_
+The latest stable CLI release can also be obtained from homebrew-central (it may lag this tap slightly).
 
-### Development Tool Releases
+### Versioned Release
 
-brew has deprecated the --devel release functionality - use the versioned releases in the next section instead.
+Versioned releases can only be obtained from this tap. Version releases are useful for two purposes:
 
-### Version Archive Tool Releases
+* Running a specific older version - sometimes useful for reproducing or testing a particular environment
+* Testing a new version before release - occasionally a prerelease version will be made available for testing before it is designated as the stable release.
 
-Occasionally it may be useful to install a specific version of the Clojure tools, particularly dev releases before they become stable. In this case, you can use this archive of @ versions. 
+Versioned formulas are named `clojure@some.version` (homebrew convention).
 
-Note that you cannot install both the stable or dev version AND a specific named version - these will conflict. You must `brew uninstall clojure/tools/clojure` first before installing a specific version. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you helpful errors and tell you what to do.
+Note that you cannot install both the stable or dev version AND a specific named version - these will conflict. You must `brew uninstall clojure` first before installing a specific version. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you a helpful message telling you what to do.
 
-To install/uninstall a versioned Clojure tools from the Clojure tap:
+To install or uninstall a versioned Clojure CLI from the Clojure tap:
 
 ```
 brew install clojure/tools/clojure@1.10.1.502
 brew uninstall clojure@1.10.1.502
 ```
 
-## Use
+## Links
 
 Please see the following docs on how to use the `clj` and `clojure` scripts:
 
-* [Getting Started](https://clojure.org/guides/getting_started)
+* [Clojure CLI Installation Guide](https://clojure.org/guides/install_clojure)
+* [Clojure CLI Changelog](https://clojure.org/releases/tools)
 * [Deps and CLI guide](https://clojure.org/guides/deps_and_cli)
 * [Deps and CLI reference](https://clojure.org/reference/deps_and_cli)
 
