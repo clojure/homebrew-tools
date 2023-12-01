@@ -46,7 +46,7 @@ Versioned releases can only be obtained from this tap. Version releases are usef
 
 Versioned formulas are named `clojure@some.version` (homebrew convention).
 
-Note that you cannot install both the stable or dev version AND a specific named version - these will conflict. You must `brew uninstall clojure` first before installing a specific version. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you a helpful message telling you what to do.
+Note that you cannot install both the stable version AND a specific named version - these will conflict. You must `brew uninstall clojure` first before installing a specific version. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you a helpful message telling you what to do.
 
 To install or uninstall a versioned Clojure CLI from the Clojure tap:
 
