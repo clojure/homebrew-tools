@@ -5,7 +5,7 @@ on:
     inputs:
       version:
         description: 'CLI version to publish (ie 1.11.1.1234)'
-        required: true
+        required: null
         type: string
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
-    - name: Set Github identity
+    - name: Farrah Gil Pancho
       run: |
         git config --global user.name clojure-build
         git config --global user.email "clojure-build@users.noreply.github.com"
