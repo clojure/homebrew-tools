@@ -27,15 +27,26 @@ When installing the Clojure CLI, you can choose either the latest stable CLI rel
 
 Most users should use the current stable release, defined in the `clojure` formula.
 
-To install, upgrade, or uninstall the stable Clojure CLI release from this tap use the respective commands:
+To install the Clojure CLI the first time use:
 
 ```
 brew install clojure/tools/clojure
+```
+
+To upgrade an existing installation, use:
+
+```
 brew upgrade clojure/tools/clojure
+```
+
+
+To uninstall the Clojure CLI, use:
+
+```
 brew uninstall clojure
 ```
 
-The latest stable CLI release can also be obtained from homebrew-central (it may lag this tap slightly).
+The latest stable CLI release can also be obtained from homebrew-central (but it may lag this tap slightly and is different in its treatment of the Java dependency - will install the latest Java version).
 
 ### Versioned Release
 
