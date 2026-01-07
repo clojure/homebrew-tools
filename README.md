@@ -59,11 +59,16 @@ Versioned formulas are named `clojure@some.version` (homebrew convention).
 
 Note that you cannot install both the stable version AND a specific named version - these will conflict. You must `brew uninstall clojure` first before installing a specific version. There are various cases where you may still have uninstalled but linked versions - in those cases `brew` will give you a helpful message telling you what to do.
 
-To install or uninstall a versioned Clojure CLI from the Clojure tap:
+To install a versioned Clojure CLI from the Clojure tap, you should first uninstall any existing Clojure formula:
+
+```
+brew uninstall clojure
+```
+
+And then use this command to install a specific versioned release:
 
 ```
 brew install clojure/tools/clojure@1.10.1.502
-brew uninstall clojure@1.10.1.502
 ```
 
 ## Links
