@@ -1,9 +1,9 @@
 class Clojure < Formula
   desc "The Clojure Programming Language"
   homepage "https://clojure.org"
-  url "https://github.com/clojure/brew-install/releases/download/1.12.5.1664/clojure-tools-1.12.5.1664.tar.gz"
-  mirror "https://download.clojure.org/install/clojure-tools-1.12.5.1664.tar.gz"
-  sha256 "77dd6868948074adcc93e83a796f8e8f15a1a92bcb1b9002d715fd2210e476f3"
+  url "https://github.com/clojure/brew-install/releases/download/1.12.6.1673/clojure-tools-1.12.6.1673.tar.gz"
+  mirror "https://download.clojure.org/install/clojure-tools-1.12.6.1673.tar.gz"
+  sha256 "fe9194858e75d5af13c2e2aff92d710674d5bc5105f2b42f90a7d94d82ec023c"
   license "EPL-1.0"
 
   depends_on "rlwrap"
